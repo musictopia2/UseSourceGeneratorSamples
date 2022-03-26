@@ -1,0 +1,12 @@
+﻿ClassA firsts = new();
+firsts.Item1 = 1;
+ClassB seconds = firsts.MapTo();
+firsts.Item1 = 2;
+Console.WriteLine(firsts.Item1);
+Console.WriteLine(seconds.Item1);
+ClassC thirds = new();
+thirds.Name = "Test";
+ClassD fourths = thirds.MapTo();
+fourths.Name = "Changed";
+Console.WriteLine(thirds.Name);
+Console.WriteLine(fourths.Name);
